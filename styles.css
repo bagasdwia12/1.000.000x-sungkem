@@ -1,29 +1,65 @@
-#emoteContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-}
-
-.emote {
-    font-size: 30px;
-    /* Ukuran emote */
-    margin: 5px;
-    /* Jarak antar emote */
-}
-
 body {
-    /* Memusatkan secara horizontal */
-    align-items: center;
-    /* Memusatkan secara vertikal */
-    height: 100vh;
-    /* Menggunakan 100% tinggi viewport */
-    margin: 0;
-    /* Menghilangkan margin default */
-    flex-direction: column;
-    /* Menyusun konten secara vertikal */
     font-family: Arial, sans-serif;
-    /* Menambahkan font keluarga */
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
     text-align: center;
-    /* Memusatkan teks dalam elemen */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* Aktifkan Flexbox */
+    justify-content: center;
+    /* Pusatkan secara horizontal */
+    align-items: center;
+    /* Pusatkan secara vertikal */
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#acceptButton {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#declineButton {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
 }
