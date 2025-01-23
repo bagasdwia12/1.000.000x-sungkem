@@ -1,0 +1,29 @@
+#emoteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.emote {
+    font-size: 30px;
+    /* Ukuran emote */
+    margin: 5px;
+    /* Jarak antar emote */
+}
+
+body {
+    /* Memusatkan secara horizontal */
+    align-items: center;
+    /* Memusatkan secara vertikal */
+    height: 100vh;
+    /* Menggunakan 100% tinggi viewport */
+    margin: 0;
+    /* Menghilangkan margin default */
+    flex-direction: column;
+    /* Menyusun konten secara vertikal */
+    font-family: Arial, sans-serif;
+    /* Menambahkan font keluarga */
+    text-align: center;
+    /* Memusatkan teks dalam elemen */
+}
