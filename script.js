@@ -9,7 +9,7 @@ const declineButtonButtonSound = new Audio("audio/wrong.mp3");
 acceptButton.addEventListener("click", () => {
     acceptButtonSound.play();
     title.textContent = "Yeey kamu baik banget, ini ada hadiah buat kamu! 🎁"; // Change the title text
-    message.textContent = "Terima kasih! ❤️";
+    message.textContent = "Terima kasih! 😁"; // Change the message text
     declineButton.style.display = "none"; // Hide the "Nggak Mau" button
     acceptButton.textContent = "Buka Kado"; // Change the button text to "Buka Kado"
 
@@ -21,7 +21,7 @@ acceptButton.addEventListener("click", () => {
 
     // Change the functionality of the "Buka Kado" button
     acceptButton.addEventListener("click", () => {
-        window.open("https://www.tiktok.com/", "_blank"); // Replace with your TikTok video link
+        window.open("video/ikanHiu.mp4", "_blank");
     });
 });
 
@@ -76,7 +76,7 @@ declineButton.addEventListener("click", () => {
             // Ganti tombol "Maafin" menjadi "Buka Kado"
             acceptButton.textContent = "Buka Kado";
             acceptButton.addEventListener("click", () => {
-                window.open("https://vt.tiktok.com/ZS6skW8D1/", "_blank"); // Link hadiah
+                window.open("video/ikanHiu.mp4", "_blank");
             });
         });
     }
