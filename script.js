@@ -56,7 +56,7 @@ declineButton.addEventListener("click", () => {
         // Tambahkan teks "Maafin dong" di bawah tombol
         const maafinText = document.createElement("p");
         maafinText.id = "maafinText";
-        maafinText.textContent = "Maafin dong 🙏";
+        maafinText.textContent = "Maafin donggg 😖😖";
         maafinText.style.color = "#333";
         maafinText.style.fontSize = "16px";
         maafinText.style.marginTop = "10px";
@@ -68,7 +68,7 @@ declineButton.addEventListener("click", () => {
             title.textContent = "Yeey kamu baik banget, ini ada hadiah buat kamu! 🎁"; // Ganti teks di atas
             message.textContent = "Terima kasih! 😁";
 
-            // Sembunyikan kedua tombol dan hanya tampilkan tombol "Buka Kado"
+            // Sembunyikan kedua tombol "Maafin" dan "Maafin dong"
             declineButton.style.display = "none"; // Sembunyikan tombol "Nggak Mau"
             maafinButton.style.display = "none"; // Sembunyikan tombol "Maafin"
             maafinText.style.display = "none"; // Sembunyikan teks "Maafin dong"
