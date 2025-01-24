@@ -2,9 +2,12 @@ const acceptButton = document.getElementById("acceptButton");
 const declineButton = document.getElementById("declineButton");
 const message = document.getElementById("message");
 const title = document.querySelector("h1");
+const acceptButtonSound = new Audio("audio/yey.mp3");
+const declineButtonButtonSound = new Audio("audio/wrong.mp3");
 
 // Event listener for "Maafin" button
 acceptButton.addEventListener("click", () => {
+    acceptButtonSound.play();
     title.textContent = "Yeey kamu baik banget, ini ada hadiah buat kamu! 🎁"; // Change the title text
     message.textContent = "Terima kasih! ❤️";
     declineButton.style.display = "none"; // Hide the "Nggak Mau" button
@@ -24,6 +27,7 @@ acceptButton.addEventListener("click", () => {
 
 // Event listener for "Nggak Mau" button
 declineButton.addEventListener("click", () => {
+    declineButtonButtonSound.play();
     // Reduce the size of the button
     const currentSize = parseFloat(window.getComputedStyle(declineButton).fontSize);
     if (currentSize > 1) {
