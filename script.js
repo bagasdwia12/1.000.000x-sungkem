@@ -54,7 +54,7 @@ declineButton.addEventListener("click", () => {
 
         declineButton.addEventListener("click", () => {
             title.textContent = "Yeey kamu baik banget, ini ada hadiah buat kamu! 🎁"; // Change the title text
-            message.textContent = "Terima kasih! ❤️";
+            message.textContent = "Terima kasih! 😁";
             declineButton.style.display = "none"; // Hide "Nggak Mau"
             acceptButton.textContent = "Buka Kado"; // Change to "Buka Kado"
 
